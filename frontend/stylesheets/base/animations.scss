@@ -1,0 +1,49 @@
+.onview {
+    opacity: 0;
+    transform: translateX(1.5rem);
+    transition: transform .4s cubic-bezier(0.310, 0.065, 0.235, 1.000),opacity .4s cubic-bezier(0.310, 0.065, 0.235, 1.000);
+}
+
+// .onview.on {
+//     opacity: 1;
+//     transform: none;
+// }
+
+.onview.left {
+    opacity: 0;
+    transform: translateX(-1.5rem);
+    transition: transform .4s cubic-bezier(0.310, 0.065, 0.235, 1.000),opacity .4s cubic-bezier(0.310, 0.065, 0.235, 1.000);
+}
+
+.onview.top {
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: transform .4s cubic-bezier(0.310, 0.065, 0.235, 1.000),opacity .4s cubic-bezier(0.310, 0.065, 0.235, 1.000);
+}
+
+.onview.on,
+.onview.left.on,
+.onview.top.on {
+    opacity: 1;
+    transform: none;
+}
+    
+// .top-bar.down-anim {
+//     height: 55px;
+//     transition: all 0.3s linear;
+//     .top-bar__navigation {
+//         height: 55px;
+//         transition: all 0.3s linear;
+//         .logo {
+//             transition: all 0.3s linear;
+//             width: 140px;
+//         }
+//         .menu-wrapper {
+//             @media all and (max-width: $mq-md) {
+//                 top: 49px;
+//                 transition: all 0.3s linear;
+//             }
+//         }
+//     }
+
+// }

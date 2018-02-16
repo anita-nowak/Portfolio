@@ -1,0 +1,155 @@
+.footer {
+    background: $dark-yellow;
+    color: #fff;
+    height: 505px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    @media all and (max-width: $mq-md) {
+        height: 678px;
+    }
+    @media all and (max-width: $mq-xs) {
+        height: auto;
+    }
+    &__wrapper {
+        @extend %main-wrapper;
+        display: flex;
+        @media all and (max-width: $mq-md) {
+            flex-direction: column;
+        }
+    }
+    &__contact-data {
+        flex: 0 0 305px;
+        padding: 56px 0 0 0;
+        @media all and (max-width: $mq-md) {
+            flex: 0 0 auto;
+            padding: 37px 0 0 0;
+        }
+        @media all and (max-width: $mq-xs) {
+            padding: 22px 0 43px 0;
+        }
+        address {
+            padding:23px 0 16px 0;
+            font-style: normal;
+            @media all and (max-width: $mq-xs) {
+                padding:15px 0 16px 0;
+            }
+            p {
+                margin: 0;
+
+            }
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            @extend %hover-opacity-animation;
+        }
+        .email {
+            padding:16px 0 0 0;
+        }
+        
+    }
+    &__title {
+        @extend %title;
+        
+    }
+    &__contact-map {
+        flex: 1 1 900px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        min-width: 63.5%;
+        height: 449px;
+        // max-width: calc(100% - 305px);
+        @media all and (min-width: 1920px) { 
+            min-width: 57%;
+        }
+        @media all and (max-width: $mq-md) {
+            min-width: 100%;
+            flex: 0 0 auto;
+            height: 342px;
+            top: auto;
+            bottom: 58px;
+        }
+        @media all and (max-width: $mq-xs) {
+            position: relative;
+            left: -28px;
+            width: 100vw;
+            bottom: auto;
+            height: 356px;
+            max-width: 100vw;
+            overflow: hidden;
+            // bottom: 105px;
+        }
+        .map {
+            height: 100%;
+            width: 100%;
+            @media all and (max-width: $mq-xs) {
+                width: 100vw;
+            }
+            .gm-style-cc,
+            .gmnoprint.gm-style-cc {
+                display: none;
+            }
+
+        }
+    }
+    small {
+        align-self: center;
+        font-size: 12px;
+        line-height: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 55px;
+        max-width: 100%;
+
+        
+        @media all and (max-width: $mq-xs) {
+            height: auto;
+            padding: 17px 0 20px;
+            display: flex;
+            width: 100%;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        p {
+            margin: 0;
+            &.credit {
+                display: block;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            @extend %hover-opacity-animation;
+        }
+        .mentions {
+            padding: 0 5px;
+            text-decoration: underline;
+            @media all and (max-width: $mq-xs) {
+                // padding: 0;
+            }
+        }
+        .footer-logo {
+            margin-left: 55px;
+            width: 81px;
+            height: 26px;
+            display: inline-block;
+            @extend %hover-opacity-animation;
+            cursor: pointer;
+            @media all and (max-width: $mq-xs) {
+                margin-left: 0;
+                margin-top: 12px;
+            }
+            svg {
+                max-width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.presentation {
+    &__wrapper {
+        @extend %main-wrapper;
+        text-align: center;
+    }
+    &__title {
+        @extend %title;
+    }
+    &__subtitle {
+        @extend %subtitle;
+        
+    }
+    &__description {
+        text-align: left;
+        display: flex;
+        .content {
+            flex: 0 0 80%;
+        }
+        .social {
+            flex: 0 0 20%;
+            a {
+                margin:30px auto;
+                display: block;
+                text-align: center;
+            }
+
+        }
+    }
+}
