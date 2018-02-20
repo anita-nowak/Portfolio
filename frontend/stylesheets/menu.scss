@@ -7,7 +7,8 @@
     height: 100vh;
     font-size: 24px;
     line-height: 28px;
-    background: url("assets/dot.jpg");
+    // background: $grey-bg;
+    border-right: 1px solid $grey-bg;
     color:#111;
     // background: $navy;
     // background: rgba(94,50,113,1);
@@ -96,14 +97,14 @@
                     color: #111;
                     transition: all 0.2s ease-in-out;
                     &:hover {
-                        color: $yellow;
+                        color: $red-role;
                     }
                     p {
                         margin:0;
                     }
                 }
                 &.active {
-                    color: $yellow;
+                    color: $red-role;
                 }
                 .item-description {
                     padding: 20px 0 0;
@@ -117,9 +118,9 @@
                     left: 50%;
                     transform: translateX(-50%);
                     content: "";
-                    width: 46px;
-                    height: 4px;
-                    background: $yellow;
+                    width: 30px;
+                    height: 3px;
+                    background: $red-role;
                 }
             }
         }
@@ -145,7 +146,7 @@
                     color: #111;
                     transition: all 0.2s ease-in-out;
                     &:hover {
-                        color: $yellow;
+                        color: $red-role;
                     }
                     p {
                         margin:0;
@@ -153,7 +154,7 @@
                 }
                 &.active {
                     a {
-                        color: $yellow;
+                        color: $red-role;
                     }
                 }
                 &:first-child {

@@ -11,12 +11,16 @@ $mq-lg: 1345px;
 
 /* COLORS */
 
-$font-grey: #4A4A4A;
+
 $yellow: #ffca80;
 $dark-yellow: #f3aa34;
 $dark-bg: #0a103f;
 $purple: #441c66;
 $navy: #1c1989;
+
+$font-grey: #eee;
+$red-role: #C33;
+$grey-bg: #eaeaea;
 
 
 /* END COLORS */
@@ -61,16 +65,17 @@ $navy: #1c1989;
     // padding-bottom: 20px;
     font-weight: 700;
     margin: 0;
-    // &:after {
-    //     position: absolute;
-    //     top: 48px;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //     content: "";
-    //     width: 46px;
-    //     height: 4px;
-    //     background: $yellow;
-    // }
+    padding: 0 0 20px 0;
+    &:after {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: "";
+        width: 30px;
+        height: 3px;
+        background: $red-role;
+    }
 }
 
 
