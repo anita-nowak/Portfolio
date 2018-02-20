@@ -2,13 +2,13 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 200px;
+    width: 100vw;
     z-index: 100;
-    height: 100vh;
-    font-size: 24px;
-    line-height: 28px;
-    // background: $grey-bg;
-    border-right: 1px solid $grey-bg;
+    height: 80px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    background: #fff;
     color:#111;
     // background: $navy;
     // background: rgba(94,50,113,1);
@@ -23,15 +23,12 @@
     // font-family: Helvetica, Arial, sans-serif;
 
     &__navigation {
-        height: 100vh;
+        @extend %main-wrapper;
+        height: 80px;
         max-width: 100%;
-        margin: 0 auto 0;
-        position: relative;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content:space-between;
         align-items: center;
-        position: relative;
         transition: all 0.15s linear;
         z-index: 100;
         font-weight: 200;
@@ -75,7 +72,6 @@
             list-style-type: none;
             margin:0;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             // color: #fff;
@@ -87,11 +83,12 @@
             }
             &__item {
                 font-family: 'Roboto Condensed', Helvetica, sans-serif;
-                margin: 25px 0;
+                margin: 0 25px;
                 text-transform: uppercase;
                 text-align: center;
-                font-weight: 700;
+                // font-weight: 700;
                 position: relative;
+                
                 a {
                     text-decoration: none;
                     color: #111;
@@ -99,43 +96,19 @@
                     &:hover {
                         color: $red-role;
                     }
-                    p {
-                        margin:0;
-                    }
                 }
                 &.active {
                     color: $red-role;
                 }
-                .item-description {
-                    padding: 20px 0 0;
-                    font-weight: 400;
-                    @extend %subtitle;
-                }
                 
-                &:after {
-                    position: absolute;
-                    top: 33px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    content: "";
-                    width: 30px;
-                    height: 3px;
-                    background: $red-role;
-                }
             }
         }
         .menu-lang {
-            font-family: 'Roboto Condensed', Helvetica, sans-serif;
             text-transform: uppercase;
             list-style-type: none;
             margin:0;
-            // color: #fff;
             max-width: 100%;
             padding: 0;
-            font-size: 18px;
-            font-weight: 700;
-            position: absolute;
-            bottom: 30px;
 
             &__item {
                 display: inline-block;
@@ -155,6 +128,7 @@
                 &.active {
                     a {
                         color: $red-role;
+                        font-weight: 700;
                     }
                 }
                 &:first-child {
